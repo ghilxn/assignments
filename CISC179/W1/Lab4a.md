@@ -60,3 +60,8 @@ print("Tuple id:", id(my_y))
 
 print("List element ids:", [id(i) for i in my_x])
 print("Tuple element ids:", [id(i) for i in my_y])
+
+# Remembering that a single element tuple needs a comma (5,).
+# Tuple can’t change, had to re-learn how to “replace” by making new one.
+# Getting used to id() to check memory differences.
+
