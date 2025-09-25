@@ -1,3 +1,4 @@
+```python
 1) Creating and accessing dictionary
  Make any dictionary with 10 elements
 # 1a
@@ -16,6 +17,10 @@ school = {
 print("len:", len(school))
 print(school)
 
+```
+
+
+```python
 # 1b
 my_user_dict = {}
 
@@ -25,6 +30,9 @@ name = input("Name: ")
 my_user_dict["SSN"] = ssn
 my_user_dict["Name"] = name
 
+```
+
+```python
 # optional extra key/value pairs
 while True:
     cont = input("Do you want to add another key/value? (Y/N): ").strip().upper()
@@ -41,11 +49,17 @@ while True:
 
 print("my_user_dict:", my_user_dict)
 
+```
+
+```python
 # example given
 a = [("a", 1), ("b", 2), ("c", 3)]
 res = dict(a)
 print(res)  # {'a': 1, 'b': 2, 'c': 3}
 
+```
+
+```python
 #1c data = [
     ('Name', 'Sarah Connor'),
     ('Date of birth', '1 Jan 1980'),
@@ -57,7 +71,8 @@ fixed = {}
 i = 0
 while i < len(data):
     item = data[i]
-
+```
+```python
     # check arity (must be 2)
     if len(item) != 2:
         print("Found invalid pair at index", i, "->", item)
@@ -83,6 +98,9 @@ while i < len(data):
 
 print("Validated dict:", fixed)
 
+```
+
+```python
 # 1d
 pairs_list = [["k1", 10], ["k2", 20], ["k3", 30], ["k4", 40]]
 out = {}
@@ -99,6 +117,9 @@ while idx < len(pairs_list):
 
 print("Converted dict:", out)
 
+```
+
+```python
 # 1e
 text = ("The tiger (Panthera tigris) is a large cat and a member of the genus Panthera native to Asia. "
         "It has a powerful, muscular body with a large head and paws, a long tail and orange fur with black, mostly vertical stripes. "
@@ -117,6 +138,9 @@ while i < len(words):
         counts[w] = 1
     i += 1
 
+```
+
+```python
 # show a few sample counts to keep output shorter
 print("Count('The'):", counts.get("The", 0))
 print("Count('the'):", counts.get("the", 0))
@@ -129,6 +153,8 @@ d_copy = d_orig
 print(d_orig)
 print(d_copy)
 
+```
+```python
 # 2a
 d_orig = {123: "Coconut"}
 d_copy = d_orig.copy()  # make a separate copy first
@@ -137,6 +163,9 @@ d_copy[456] = "Mango"
 print("d_orig:", d_orig)  # stays {'123': 'Coconut'}
 print("d_copy:", d_copy)  # has the extra key
 
+```
+
+```python
 # 2b
 # Problem: using d_copy = d_orig makes both names point to the same dict (aliasing).
 # Solution: make a copy before editing.
@@ -152,6 +181,9 @@ d_copy_deep["b"]["nested"] = False
 print("original:", d_orig)
 print("deepcopy:", d_copy_deep)
 
+```
+
+```python
 # 2c
 # This line causes the error below if you run it.
 # d_bad = { [1, 2]: "nope" }   # TypeError: unhashable type: 'list'
@@ -161,9 +193,11 @@ print("deepcopy:", d_copy_deep)
 d_ok = { (1, 2): "works (tuple key)" }
 print(d_ok)
 
+```
+```python
 # remembering keys must be unique; handled duplicates by asking the user to rename
 
 # no try/except, so I used simple if/else checks and while loops
 
 # word count is case-sensitive on purpose (so “The” and “the” are different)
-
+```
