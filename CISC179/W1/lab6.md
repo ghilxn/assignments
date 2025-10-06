@@ -1,9 +1,13 @@
+```python
 # Lab 6: Text Parsing
 # Author: Gavin 
 # This program counts words and characters in a story,
 # finds emails and phone numbers using regex,
 # and makes new emails ending with @hotmail.com.
+```
+## [![Watch the video](https://img.youtube.com/vi/3cytcu-i7Rg/0.jpg)](https://youtu.be/3cytcu-i7Rg)
 ```python
+
 import re  # used to find patterns like emails or phone numbers
 
 # === STORY TEXT ===
